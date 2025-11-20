@@ -47,11 +47,12 @@ if (process.env.NODE_ENV === "production") {
 
   app.use(express.static(distPath));
 
-  // Fallback for React Router
-  app.get("/*", (req, res) => {
+  // Express 5-compatible catch-all route
+  app.get("/:path*", (req, res) => {
     res.sendFile(path.join(distPath, "index.html"));
   });
 }
+
 
 // Start Server
 server.listen(PORT, () => {
