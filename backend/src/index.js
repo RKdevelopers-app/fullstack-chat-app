@@ -19,41 +19,42 @@ const __dirname = path.dirname(__filename);
 
 const PORT = process.env.PORT || 5001;
 
-// Trust proxy for Render (VERY IMPORTANT for cookies)
+// Render requires this for cookies
 app.set("trust proxy", 1);
 
 // Middlewares
-app.use(express.json({ limit: "10mb" })); // allows image upload or large json
+app.use(express.json({ limit: "10mb" }));
 app.use(cookieParser());
 
-// CORS setup
+// CORS (Allow same origin on Render)
 app.use(
   cors({
-    origin: process.env.NODE_ENV === "production"
-      ? "https://your-frontend-domain.vercel.app"
-      : "http://localhost:5173",
+    origin:
+      process.env.NODE_ENV === "production"
+        ? true // allow same origin automatically
+        : "http://localhost:5173",
     credentials: true,
   })
 );
 
-// API routes
+// Backend API Routes
 app.use("/api/auth", authRoutes);
 app.use("/api/messages", messageRoutes);
 
-// Production: Serve frontend build
+// Production: Serve Frontend Dist Folder
 if (process.env.NODE_ENV === "production") {
   const distPath = path.join(__dirname, "../frontend/dist");
 
   app.use(express.static(distPath));
 
-  // Catch-all for client-side routing
+  // Fallback for React Router
   app.get("/*", (req, res) => {
     res.sendFile(path.join(distPath, "index.html"));
   });
 }
 
-// Start server
+// Start Server
 server.listen(PORT, () => {
-  console.log("Server running on PORT: " + PORT);
+  console.log("Server started on port:", PORT);
   connectDB();
 });
