@@ -13,9 +13,7 @@ import { fileURLToPath } from "url";
 
 dotenv.config();
 
-// Fix __dirname for ESM
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const __dirname = path.resolve();
 
 const PORT = process.env.PORT || 5001;
 
@@ -43,14 +41,10 @@ app.use("/api/messages", messageRoutes);
 
 // ---------- Serve Frontend in Production ----------
 if (process.env.NODE_ENV === "production") {
-  const distPath = path.join(__dirname, "../frontend/dist");
+  app.use(express.static(path.join(__dirname, "../frontend/dist")));
 
-  // Serve static files
-  app.use(express.static(distPath));
-
-  // React Router fallback (Wildcard works perfectly in Express 4)
   app.get("*", (req, res) => {
-    res.sendFile(path.join(distPath, "index.html"));
+    res.sendFile(path.join(__dirname, "../frontend", "dist", "index.html"));
   });
 }
 // --------------------------------------------------
