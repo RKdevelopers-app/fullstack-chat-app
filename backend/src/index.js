@@ -19,43 +19,44 @@ const __dirname = path.dirname(__filename);
 
 const PORT = process.env.PORT || 5001;
 
-// Render requires this for cookies
+// Required for cookies on Render
 app.set("trust proxy", 1);
 
-// Middlewares
+// Middleware
 app.use(express.json({ limit: "10mb" }));
 app.use(cookieParser());
 
-// CORS (Allow same origin on Render)
+// CORS
 app.use(
   cors({
     origin:
       process.env.NODE_ENV === "production"
-        ? true // allow same origin automatically
+        ? true // allow same origin in production
         : "http://localhost:5173",
     credentials: true,
   })
 );
 
-// Backend API Routes
+// API Routes
 app.use("/api/auth", authRoutes);
 app.use("/api/messages", messageRoutes);
 
-// Production: Serve Frontend Dist Folder
+// ---------- Serve Frontend in Production ----------
 if (process.env.NODE_ENV === "production") {
   const distPath = path.join(__dirname, "../frontend/dist");
 
+  // Serve static files
   app.use(express.static(distPath));
 
-  // Express 5-compatible catch-all route
-  app.get("/:path*", (req, res) => {
+  // React Router fallback (Wildcard works perfectly in Express 4)
+  app.get("*", (req, res) => {
     res.sendFile(path.join(distPath, "index.html"));
   });
 }
+// --------------------------------------------------
 
-
-// Start Server
+// Start server
 server.listen(PORT, () => {
-  console.log("Server started on port:", PORT);
+  console.log("Server running on port:", PORT);
   connectDB();
 });
