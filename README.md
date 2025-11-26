@@ -10,7 +10,8 @@ A full-stack real-time chat application built with MERN, WebSockets, and Zustand
 
 Upload your screenshots to GitHub and replace the image URLs below.
 
-🔐 Login Page
+### 🔐 Login Page
+![Login Page](https://github.com/RKdevelopers-app/fullstack-chat-app/blob/a08407509884220cb8413eb2da1ca72aa2c10bbb/screenshots/Screenshot%202025-11-26%20at%2014.35.36.png?raw=true)
 
 📝 Sign Up Page
 
