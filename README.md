@@ -21,34 +21,53 @@ Upload your screenshots to GitHub and replace the image URLs below.
 ⭐ Features
 
 🔑 Authentication
+
 • JWT-based auth using httpOnly cookies
+
 • Protected routes (backend + frontend)
+
 • Auto-login on refresh using /auth/check
 
 💬 Real-Time Chat
+
 • One-to-one messaging
+
 • Typing indicator (optional)
+
 • Auto-scroll to latest message
+
 • Image upload with Cloudinary
+
 • Readable message timestamps
 
 🟢 Live Online Status
+
 • Socket.IO real-time user presence tracking
+
 • Sidebar shows who is currently online
 
 📂 User Profile
+
 • Upload a profile picture
+
 • Cloudinary storage
+
 • Display account creation date
 
 🎨 Custom Themes
+
 • Multiple DaisyUI themes
+
 • Saved in localStorage
+
 • Live preview before applying
 
 🗂 Clean UI & UX
+
 • Responsive layout
+
 • Skeleton loading states
+
 • Smooth animations
 
 🏗 Tech Stack
@@ -56,51 +75,78 @@ Upload your screenshots to GitHub and replace the image URLs below.
 Frontend
 
 • React + Vite
+
 • Zustand (state management)
+
 • DaisyUI + TailwindCSS
+
 • Axios
+
 • Socket.IO client
 
 Backend
 
 • Node.js + Express
+
 • MongoDB + Mongoose
+
 • Cloudinary for image uploads
+
 • Socket.IO for real-time communication
+
 • JWT authentication
 
 Deployment
 
 • Render (full-stack deployment)
+
 • Environment variables for production
+
 • Optimized build and static file serving
 
 
 🔧 Installation & Setup
+
 1️⃣ Clone the repo
+
 git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git
+
 cd chat-app
 
 🔧 Backend Setup
+
 Install dependencies
+
 cd backend
+
 npm install
 
 Create .env file
+
 MONGO_URI=your_mongodb_connection_string
+
 JWT_SECRET=your_jwt_secret
+
 CLOUDINARY_CLOUD_NAME=your_cloudinary_name
+
 CLOUDINARY_API_KEY=your_cloudinary_key
+
 CLOUDINARY_API_SECRET=your_cloudinary_secret
+
 NODE_ENV=development
 
 Run backend
+
 npm run dev
 
 🎨 Frontend Setup
+
 Install dependencies
+
 cd ../frontend
+
 npm install
 
 Run frontend
+
 npm run dev
