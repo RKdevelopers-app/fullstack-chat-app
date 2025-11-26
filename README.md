@@ -1,138 +1,155 @@
-🚀 Chatty — Real-Time MERN Chat App
+🚀 Chatty — Real-Time Full-Stack Chat Application
 
-Live Demo: https://fullstack-chat-app-j32j.onrender.com
+Live Demo 👉 https://fullstack-chat-app-j32j.onrender.com
 
-(Backend may take a few seconds to wake up on free Render plan)
-
-Chatty is a full-stack real-time chat application built using the MERN stack, featuring secure authentication, one-to-one messaging, image sharing, online user tracking, and a beautiful modern UI.
-
-📌 Features
-🔐 Authentication
-
-JWT-based auth with HttpOnly cookies
-
-Signup, Login, Logout
-
-Auto-auth on page refresh (/auth/check)
-
-Protected routes on frontend & backend
-
-💬 Real-Time Messaging
-
-Instant message delivery using Socket.IO
-
-Live online/offline indicators
-
-Auto-scroll to latest message
-
-Chat image support (via Cloudinary)
-
-🧠 State Management (Zustand)
-
-Auth store – user, login/logout, socket connection
-
-Chat store – users list, messages, live listeners
-
-Theme store – persistent theme preference
-
-🎨 UI / UX
-
-Responsive layout
-
-Modern design using TailwindCSS + DaisyUI
-
-Profile page with avatar upload
-
-Settings page with theme selector
-
-Smooth transitions & animations
-
-☁️ File Uploads (Cloudinary)
-
-Profile image uploads
-
-Chat image attachments
-
-🏗️ Tech Stack
-Frontend
-
-React
-
-Vite
-
-Zustand
-
-Axios
-
-Socket.IO Client
-
-DaisyUI + TailwindCSS
-
-Backend
-
-Node.js
-
-Express
-
-MongoDB + Mongoose
-
-JWT + Cookies
-
-Socket.IO
-
-Cloudinary
-
-Deployment
-
-Render (Backend & Frontend build)
-
-Cloudinary for image storage
+A full-stack real-time chat application built with MERN, WebSockets, and Zustand, featuring authentication, image messaging, online user status, profile management, and theme switching.
 
 📸 Screenshots
 
-(You can add screenshots later — I can help you generate some neat ones!)
+Upload your screenshots to GitHub and replace the image URLs below.
 
-⚙️ Installation & Setup (Local)
-1️⃣ Clone the repo
-git clone https://github.com/yourusername/chat-app.git
-cd chat-app
+🔐 Login Page
 
-2️⃣ Install dependencies
+📝 Sign Up Page
+
+💬 Chat Interface
+
+👤 Profile Page
+
+🎨 Theme Settings
+
+⭐ Features
+🔑 Authentication
+
+JWT-based auth using httpOnly cookies
+
+Protected routes (backend + frontend)
+
+Auto-login on refresh using /auth/check
+
+💬 Real-Time Chat
+
+One-to-one messaging
+
+Typing indicator (optional)
+
+Auto-scroll to latest message
+
+Image upload with Cloudinary
+
+Readable message timestamps
+
+🟢 Live Online Status
+
+Socket.IO real-time user presence tracking
+
+Sidebar shows who is currently online
+
+📂 User Profile
+
+Upload a profile picture
+
+Cloudinary storage
+
+Display account creation date
+
+🎨 Custom Themes
+
+Multiple DaisyUI themes
+
+Saved in localStorage
+
+Live preview before applying
+
+🗂 Clean UI & UX
+
+Responsive layout
+
+Skeleton loading states
+
+Smooth animations
+
+🏗 Tech Stack
+Frontend
+
+React + Vite
+
+Zustand (state management)
+
+DaisyUI + TailwindCSS
+
+Axios
+
+Socket.IO client
 
 Backend
 
+Node.js + Express
+
+MongoDB + Mongoose
+
+Cloudinary for image uploads
+
+Socket.IO for real-time communication
+
+JWT authentication
+
+Deployment
+
+Render (full-stack deployment)
+
+Environment variables for production
+
+Optimized build and static file serving
+
+📁 Folder Structure
+chat-app/
+│
+├── backend/
+│   ├── src/
+│   │   ├── controllers/
+│   │   ├── routes/
+│   │   ├── models/
+│   │   ├── lib/
+│   │   └── index.js
+│   └── package.json
+│
+├── frontend/
+│   ├── src/
+│   │   ├── pages/
+│   │   ├── components/
+│   │   ├── store/
+│   │   ├── lib/
+│   │   └── App.jsx
+│   └── package.json
+│
+└── README.md
+
+🔧 Installation & Setup
+1️⃣ Clone the repo
+git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git
+cd chat-app
+
+🔧 Backend Setup
+Install dependencies
 cd backend
 npm install
 
+Create .env file
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+CLOUDINARY_CLOUD_NAME=your_cloudinary_name
+CLOUDINARY_API_KEY=your_cloudinary_key
+CLOUDINARY_API_SECRET=your_cloudinary_secret
+NODE_ENV=development
 
-Frontend
+Run backend
+npm run dev
 
+🎨 Frontend Setup
+Install dependencies
 cd ../frontend
 npm install
 
-3️⃣ Create Environment Variables
-/backend/.env
-MONGO_URI=your_mongodb_url
-JWT_SECRET=your_jwt_secret
-CLOUDINARY_CLOUD_NAME=xxxx
-CLOUDINARY_API_KEY=xxxx
-CLOUDINARY_API_SECRET=xxxx
-NODE_ENV=development
-PORT=5001
-
-4️⃣ Run the app
-Backend
-cd backend
+Run frontend
 npm run dev
-
-Frontend
-cd frontend
-npm run dev
-
-🏁 Production Build
-Build frontend & start backend
-
-From project root:
-
-npm run build
-npm start
