@@ -1,6 +1,6 @@
 🚀 Chatty — Real-Time Full-Stack Chat Application
 
-Live Demo 👉 https://fullstack-chat-app-j32j.onrender.com
+<a href="https://fullstack-chat-app-j32j.onrender.com" target="_blank">Live Demo 👉 https://fullstack-chat-app-j32j.onrender.com</a>
 
 A full-stack real-time chat application built with MERN, WebSockets, and Zustand, featuring authentication, image messaging, online user status, profile management, and theme switching.
 
