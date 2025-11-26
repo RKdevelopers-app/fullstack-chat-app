@@ -9,72 +9,93 @@ A full-stack real-time chat application built with MERN, WebSockets, and Zustand
 Upload your screenshots to GitHub and replace the image URLs below.
 
 🔐 Login Page
-
 📝 Sign Up Page
-
 💬 Chat Interface
-
 👤 Profile Page
-
 🎨 Theme Settings
-
 ⭐ Features
-
 🔑 Authentication
-• JWT-based auth using httpOnly cookies
-• Protected routes (backend + frontend)
-• Auto-login on refresh using /auth/check
+
+JWT-based auth using HttpOnly cookies
+
+Protected routes (backend + frontend)
+
+Auto-login on refresh using /auth/check
 
 💬 Real-Time Chat
-• One-to-one messaging
-• Typing indicator (optional)
-• Auto-scroll to latest message
-• Image upload with Cloudinary
-• Readable message timestamps
+
+One-to-one messaging
+
+Typing indicator (optional)
+
+Auto-scroll to latest message
+
+Image upload with Cloudinary
+
+Readable message timestamps
 
 🟢 Live Online Status
-• Socket.IO real-time user presence tracking
-• Sidebar shows who is currently online
+
+Socket.IO real-time presence tracking
+
+Sidebar shows online users
 
 📂 User Profile
-• Upload a profile picture
-• Cloudinary storage
-• Display account creation date
+
+Upload a profile picture
+
+Cloudinary image storage
+
+Shows account creation date
 
 🎨 Custom Themes
-• Multiple DaisyUI themes
-• Saved in localStorage
-• Live preview before applying
+
+Multiple DaisyUI themes
+
+Saved in localStorage
+
+Live preview before applying
 
 🗂 Clean UI & UX
-• Responsive layout
-• Skeleton loading states
-• Smooth animations
+
+Responsive layout
+
+Skeleton loading states
+
+Smooth animations
 
 🏗 Tech Stack
-
 Frontend
 
-• React + Vite
-• Zustand (state management)
-• DaisyUI + TailwindCSS
-• Axios
-• Socket.IO client
+React + Vite
+
+Zustand
+
+DaisyUI + TailwindCSS
+
+Axios
+
+Socket.IO client
 
 Backend
 
-• Node.js + Express
-• MongoDB + Mongoose
-• Cloudinary for image uploads
-• Socket.IO for real-time communication
-• JWT authentication
+Node.js + Express
+
+MongoDB + Mongoose
+
+Cloudinary for image uploads
+
+Socket.IO for real-time communication
+
+JWT authentication
 
 Deployment
 
-• Render (full-stack deployment)
-• Environment variables for production
-• Optimized build and static file serving
+Render
 
+Production environment variables
+
+Optimized static file serving
 
 🔧 Installation & Setup
 1️⃣ Clone the repo
@@ -86,7 +107,7 @@ Install dependencies
 cd backend
 npm install
 
-Create .env file
+Create .env
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
 CLOUDINARY_CLOUD_NAME=your_cloudinary_name
