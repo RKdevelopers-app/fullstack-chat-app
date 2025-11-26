@@ -6,20 +6,37 @@ A full-stack real-time chat application built with MERN, WebSockets, and Zustand
 
 
 
-📸 Screenshots
+## 📸 Screenshots
 
-Upload your screenshots to GitHub and replace the image URLs below.
+<div style="display:flex; gap:12px; overflow-x:auto; padding:10px 0; align-items:flex-start;">
 
-### 🔐 Login Page
-![Login Page](https://github.com/RKdevelopers-app/fullstack-chat-app/blob/a08407509884220cb8413eb2da1ca72aa2c10bbb/screenshots/Screenshot%202025-11-26%20at%2014.35.36.png?raw=true)
+  <div style="display:flex; flex-direction:column; align-items:center; min-width:320px;">
+    <img src="https://github.com/RKdevelopers-app/fullstack-chat-app/blob/a08407509884220cb8413eb2da1ca72aa2c10bbb/screenshots/Screenshot%202025-11-26%20at%2014.48.12.png?raw=true" width="320" alt="Signup Page" />
+    <div style="font-size:12px; margin-top:6px;">📝 Sign Up Page</div>
+  </div>
 
-📝 Sign Up Page
+  <div style="display:flex; flex-direction:column; align-items:center; min-width:320px;">
+    <img src="https://github.com/RKdevelopers-app/fullstack-chat-app/blob/a08407509884220cb8413eb2da1ca72aa2c10bbb/screenshots/Screenshot%202025-11-26%20at%2014.35.36.png?raw=true" width="320" alt="Login Page" />
+    <div style="font-size:12px; margin-top:6px;">🔐 Login Page</div>
+  </div>
 
-💬 Chat Interface
+  <div style="display:flex; flex-direction:column; align-items:center; min-width:320px;">
+    <img src="https://github.com/RKdevelopers-app/fullstack-chat-app/blob/a08407509884220cb8413eb2da1ca72aa2c10bbb/screenshots/Screenshot%202025-11-26%20at%2014.36.55.png?raw=true" width="320" alt="Chat Interface" />
+    <div style="font-size:12px; margin-top:6px;">💬 Chat Interface</div>
+  </div>
 
-👤 Profile Page
+  <div style="display:flex; flex-direction:column; align-items:center; min-width:320px;">
+    <img src="https://github.com/RKdevelopers-app/fullstack-chat-app/blob/a08407509884220cb8413eb2da1ca72aa2c10bbb/screenshots/Screenshot%202025-11-26%20at%2014.37.26.png?raw=true" width="320" alt="Settings Page" />
+    <div style="font-size:12px; margin-top:6px;">🎨 Settings</div>
+  </div>
 
-🎨 Theme Settings
+  <div style="display:flex; flex-direction:column; align-items:center; min-width:320px;">
+    <img src="https://github.com/RKdevelopers-app/fullstack-chat-app/blob/a08407509884220cb8413eb2da1ca72aa2c10bbb/screenshots/Screenshot%202025-11-26%20at%2014.37.29.png?raw=true" width="320" alt="Profile Page" />
+    <div style="font-size:12px; margin-top:6px;">👤 Profile Page</div>
+  </div>
+
+</div>
+
 
 
 
