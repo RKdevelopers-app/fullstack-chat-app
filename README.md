@@ -67,17 +67,23 @@ A full-stack real-time chat application built with MERN, WebSockets, and Zustand
 
 ## 📸 Screenshots
 
-<div style="display:flex; gap:12px; overflow-x:auto; padding:10px 0;">
 
-  <div style="display:flex; flex-direction:column; align-items:center; min-width:320px;">
-    <img src="https://github.com/RKdevelopers-app/fullstack-chat-app/blob/a08407509884220cb8413eb2da1ca72aa2c10bbb/screenshots/Screenshot%202025-11-26%20at%2014.48.12.png?raw=true" width="320" />
-    <div style="font-size:12px; margin-top:6px;">📝 Sign Up Page</div>
-  </div>
+## 📸 Screenshots
 
-  <div style="display:flex; flex-direction:column; align-items:center; min-width:320px;">
-    <img src="https://github.com/RKdevelopers-app/fullstack-chat-app/blob/a08407509884220cb8413eb2da1ca72aa2c10bbb/screenshots/Screenshot%202025-11-26%20at%2014.35.36.png?raw=true" width="320" />
-    <div style="font-size:12px; margin-top:6px;">🔐 Login Page</div>
-  </div>
+### 📝 Sign Up Page
+![Signup](https://github.com/RKdevelopers-app/fullstack-chat-app/blob/a08407509884220cb8413eb2da1ca72aa2c10bbb/screenshots/Screenshot%202025-11-26%20at%2014.48.12.png?raw=true)
 
-  <div style="display:flex; flex-direction:column; align-items:center; min-width:320px;">
-    <img src="https://github.com/RKdevelopers-app/fullstack-chat-app/blob/a0840
+### 🔐 Login Page
+![Login](https://github.com/RKdevelopers-app/fullstack-chat-app/blob/a08407509884220cb8413eb2da1ca72aa2c10bbb/screenshots/Screenshot%202025-11-26%20at%2014.35.36.png?raw=true)
+
+### 💬 Chat Interface
+![Chat](https://github.com/RKdevelopers-app/fullstack-chat-app/blob/a08407509884220cb8413eb2da1ca72aa2c10bbb/screenshots/Screenshot%202025-11-26%20at%2014.36.55.png?raw=true)
+
+### 🎨 Settings Page
+![Settings](https://github.com/RKdevelopers-app/fullstack-chat-app/blob/a08407509884220cb8413eb2da1ca72aa2c10bbb/screenshots/Screenshot%202025-11-26%20at%2014.37.26.png?raw=true)
+
+### 👤 Profile Page
+![Profile](https://github.com/RKdevelopers-app/fullstack-chat-app/blob/a08407509884220cb8413eb2da1ca72aa2c10bbb/screenshots/Screenshot%202025-11-26%20at%2014.37.29.png?raw=true)
+
+---
+
