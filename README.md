@@ -4,6 +4,7 @@ Live Demo 👉 https://fullstack-chat-app-j32j.onrender.com
 
 A full-stack real-time chat application built with MERN, WebSockets, and Zustand, featuring authentication, image messaging, online user status, profile management, and theme switching.
 
+
 📸 Screenshots
 
 Upload your screenshots to GitHub and replace the image URLs below.
@@ -17,6 +18,7 @@ Upload your screenshots to GitHub and replace the image URLs below.
 👤 Profile Page
 
 🎨 Theme Settings
+
 
 ⭐ Features
 
@@ -70,6 +72,7 @@ Upload your screenshots to GitHub and replace the image URLs below.
 
 • Smooth animations
 
+
 🏗 Tech Stack
 
 Frontend
@@ -105,6 +108,7 @@ Deployment
 • Optimized build and static file serving
 
 
+
 🔧 Installation & Setup
 
 1️⃣ Clone the repo
@@ -113,7 +117,7 @@ git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git
 
 cd chat-app
 
-🔧 Backend Setup
+2️⃣ Backend Setup
 
 Install dependencies
 
@@ -139,7 +143,7 @@ Run backend
 
 npm run dev
 
-🎨 Frontend Setup
+3️⃣ Frontend Setup
 
 Install dependencies
 
