@@ -30,4 +30,3 @@ export const protectRoute = async (req, res, next) => {
   }
 };
 
-//checks if the user is logged in

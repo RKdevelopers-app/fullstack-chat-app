@@ -112,9 +112,3 @@ export const useAuthStore = create((set, get) => ({
   }
 }));
 
-// so what happens is that we do this axiosInstance.get("/auth/check");
-// and this sends the Request to the backend check route where the 
-// protectRoute it checks if the user is logged in and if he is
-// then we send the user in the req and then the authCheck controller 
-// it sends that user in the req as a res, and here in checkAuth we 
-// then set that user data using the set fn
