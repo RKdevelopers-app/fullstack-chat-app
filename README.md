@@ -61,7 +61,7 @@ A full-stack real-time chat application built with MERN, WebSockets, and Zustand
 - Render (full-stack deployment)
 - Cloudinary (image hosting)
 - Production environment variables
-- Optimized build + static file serving
+- Optimized build + static file serving.
 
 ---
 
