@@ -11,7 +11,7 @@ A full-stack real-time chat application built with MERN, WebSockets, and Zustand
 ### 🔑 Authentication
 - JWT-based auth using HttpOnly cookies
 - Protected routes (backend + frontend)
-- Auto-login on refresh using `/auth/check`
+- Auto-login on refresh using `/auth/check`.
 
 ### 💬 Real-Time Chat
 - One-to-one messaging  
