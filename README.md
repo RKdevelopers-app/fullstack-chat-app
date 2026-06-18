@@ -15,7 +15,6 @@ A full-stack real-time chat application built with MERN, WebSockets, and Zustand
 
 ### 💬 Real-Time Chat
 - One-to-one messaging  
-- Typing indicator (optional)
 - Auto-scroll to latest message
 - Image upload with Cloudinary
 - Readable message timestamps
